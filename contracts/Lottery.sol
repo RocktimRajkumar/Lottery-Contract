@@ -33,4 +33,8 @@ contract Lottery{
     function getPlayers() public view returns (address[]){
         return players;
     }
+
+    function getTotalBalance() public view returns (uint){
+        return address(this).balance;
+    }
 }
